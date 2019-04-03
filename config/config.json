@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "close-period-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/closePeriod/ClosePeriodCommandSet.js",
+          "manifest": "./src/extensions/closePeriod/ClosePeriodCommandSet.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "@pnp/pnpjs": {
+      "path": "https://cdnjs.cloudflare.com/ajax/libs/pnp-pnpjs/1.1.4/pnpjs.es5.umd.bundle.min.js",
+      "globalName": "pnp"
+    }
+  },
+  "localizedResources": {
+    "ClosePeriodCommandSetStrings": "lib/extensions/closePeriod/loc/{locale}.js"
+  }
+}

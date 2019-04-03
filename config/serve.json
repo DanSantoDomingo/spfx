@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://artesyn.sharepoint.com/sandbox/PMO/ResProj/Lists/Period%20Year/AllItems.aspx",
+      "customActions": {
+        "3460baf4-6281-43ce-b1fe-a13a13ae1c5f": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    },
+    "closePeriod": {
+      "pageUrl": "https://artesyn.sharepoint.com/sandbox/PMO/ResProj/Lists/Period%20Year/AllItems.aspx",
+      "customActions": {
+        "3460baf4-6281-43ce-b1fe-a13a13ae1c5f": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    }
+  }
+}
